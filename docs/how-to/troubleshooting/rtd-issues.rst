@@ -72,7 +72,7 @@ Possible causes
 ~~~~~~~~~~~~~~~
 
 This occurs when a version is deactivated in the RTD GUI, for example by turning
-off its **Active** switch, and someone later tries to create a new version with
+off its :guilabel:`Active` switch, and someone later tries to create a new version with
 the same slug. Read the Docs has no delete option in its web GUI, so the
 deactivated version continues to occupy that slug indefinitely.
 
@@ -80,7 +80,7 @@ When a version is deactivated
 (see `Inactive versions <https://docs.readthedocs.com/platform/stable/versions.html#version-states>`_),
 its documentation content is deleted and builds can no longer be triggered from
 the GUI. However, the version itself remains and retains its slug. It may not
-appear in the **Versions** tab, making it effectively invisible in the web GUI
+appear in the :guilabel:`Versions` tab, making it effectively invisible in the web GUI
 while still causing the "slug is already in use" error.
 
 Resolution
