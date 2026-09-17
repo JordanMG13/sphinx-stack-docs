@@ -22,12 +22,6 @@ Resolution
 
 In ``.rst`` sources, keep ``&`` in the URL; Sphinx will escape it correctly in the generated HTML. For example: ``https://example.com/?param1=value1&param2=value2``.
 
-If you are using `Markdown <https://daringfireball.net/projects/markdown/>`_, you can use raw HTML syntax to include the link in the documentation. For example, you can use:
-
-.. code:: html
-
-     <a href="https://example.com/?param1=value1&amp;param2=value2">Link text</a>
-
 If you are using `MyST <https://myst-parser.readthedocs.io/en/latest/>`_, add the link in an ``eval-rst`` directive. You may also want to include a comment explaining the workaround so it'll be easier to undo later on.
 
 .. code-block:: markdown
