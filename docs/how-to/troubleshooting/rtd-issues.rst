@@ -36,7 +36,7 @@ Diagnosis
 ~~~~~~~~~
 
 There's a roundabout procedure to verify whether your project is affected. Start by
-opening your project dashboard on ReadTheDocs.
+opening your project dashboard on Read the Docs.
 
 On the :guilabel:`Builds` tab, locate the most recent ``stable`` build. For that version, hover
 over the status indicator. In the hover box, open the :guilabel:`stable` link. If the resulting
