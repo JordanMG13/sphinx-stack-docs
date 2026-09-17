@@ -18,7 +18,6 @@ Probable cause
 
 A ``ModuleNotFoundError`` means the Python interpreter running the build cannot locate the named module at all. The most common causes for a local build are:
 
-* **The dependencies were never installed, or the wrong environment is active.** The build is running against a Python interpreter that does not have the documentation dependencies installed, for example because the virtual environment was not activated or ``requirements.txt`` was not installed into it.
 * **The package is missing from** ``requirements.txt``. The module is not installed because it is not declared as a dependency. If it works for you but fails for a colleague or in CI, it is likely installed in your environment but absent from ``requirements.txt``.
 * **A local module or extension is not on** ``sys.path``. Custom extensions or ``conf.py`` helpers that live inside the repository are not importable unless their directory is added to the path in ``conf.py``.
 
@@ -54,20 +53,22 @@ Resolution
 'Pip resolution too deep' error
 --------------------------------
 
+This error occurred recently while building several Sphinx Stack based documentation sets independently on different machines on a specific day when a new version of ``myst-parser`` was released. The issue could be resolved by pinning the ``myst-parser`` version in the ``requirements.txt`` file.
 
 Probable cause
 ~~~~~~~~~~~~~~
 
-This error typically occurs when the ``requirements.txt`` file has conflicting dependencies or a dependency tree too complex for ``pip`` to resolve efficiently.
+This error may occur when the ``requirements.txt`` file has conflicting dependencies or a dependency tree is too complex for ``pip`` to resolve efficiently.
 
 Documentation based on the Sphinx Stack often hit this error due to an unpinned or incompatible version of a package.
 
 Resolution
 ~~~~~~~~~~
 
-Review the dependencies listed in the ``requirements.txt`` file and resolve any conflicts caused by incompatible or unpinned package versions or newly released versions. To fix this, try:
+Review the dependencies listed in the ``requirements.txt`` file and resolve any conflicts caused by incompatible or unpinned package versions or newly released versions. 
+
+To fix the issue, try:
 
 * Restricting problem packages to recent versions (using ``package~=version``)
 * Using a constraints file
 
-As an example, the error showed up recently while building several Sphinx Stack based documentation sets independently on different machines on a specific day when a new version of ``myst-parser`` was released. The issue could be resolved by pinning the ``myst-parser`` version in the ``requirements.txt`` file.
