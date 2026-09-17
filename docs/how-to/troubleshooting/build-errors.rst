@@ -24,31 +24,23 @@ A ``ModuleNotFoundError`` means the Python interpreter running the build cannot 
 Resolution
 ~~~~~~~~~~
 
-#. Read the full traceback and note the exact module name reported after ``No module named`` error message.
-#. Confirm you are building inside the correct environment with the dependencies installed::
+Read the full traceback and note the exact module name reported after ``No module named`` error message. If it is a third-party package (for example ``myst-parser``), check whether it is listed in ``requirements.txt``. If it is missing, add it and reinstall. If it is present, confirm it is actually installed in the active environment with ``pip show <package>``. If a newer version is available, consider updating it and adjusting the version constraints in ``requirements.txt`` accordingly.
 
-   .. code-block:: bash
-      
-      source .venv/bin/activate    # or your environment's activation command
-      pip install -r requirements.txt
+Rebuild to confirm the fix
 
-#. If it is a third-party package (for example ``myst-parser``), check whether it is listed in ``requirements.txt``. If it is missing, add it and reinstall. If it is present, confirm it is actually installed in the active environment with ``pip show <package>``. If a newer version is available, consider updating it and adjusting the version constraints in 
+.. code-block:: bash
 
-#. Rebuild to confirm the fix::
+     make clean; make run
 
-   .. code-block:: bash
+.. tip::
 
-      sphinx-build -W -b html . _build/html
+   If the build works for you but fails for a colleague or in a GitHub PR check, the module is almost always installed in your local environment but missing from ``requirements.txt``. Add it there so every environment installs it.
 
-   .. tip::
+For local extensions, you need to append the source to your system path by adding the following line to your ``conf.py`` file:
 
-      If the build works for you but fails for a colleague or in a GitHub PR check, the module is almost always installed in your local environment but missing from ``requirements.txt``. Add it there so every environment installs it.
+.. code-block:: python  
 
-#. For local extensions, you need to append the source to your system path by adding the following line to your ``conf.py`` file:
-
-   .. code-block:: python  
-
-      sys.path.insert(0, os.path.abspath('<path>'))  
+     sys.path.insert(0, os.path.abspath('<path>'))  
 
 'Pip resolution too deep' error
 --------------------------------
