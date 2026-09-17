@@ -119,8 +119,8 @@ Confirm that the git repository URL setting in Read the Docs points to a valid r
 
 If the above steps do not solve the problem, delete and `reinstate the webhook <https://docs.readthedocs.com/platform/latest/guides/setup/git-repo-manual.html#manual-integration-setup>`_.
 
-`readthedocs.yaml` file issues
-------------------------------
+``readthedocs.yaml`` file issues
+--------------------------------
 
 The GitHub pull request build fails stating the ``.readthedocs.yaml`` file is not accessible.
 
