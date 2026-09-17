@@ -219,6 +219,3 @@ Disable failure on warning
 The docs build is, by default, set to fail when a warning (``WARNING`` in the build log)
 is encountered. To disable this setting, remove the ``--failure-on-warning`` option from
 the command specified in the ``html`` target in the ``Makefile``.
-   - `Sphinx configuration <https://www.sphinx-doc.org/en/master/usage/configuration.html>`__
-   - `Sphinx extensions <https://www.sphinx-doc.org/en/master/usage/extensions/index.html>`__
-   - `Furo documentation <https://pradyunsg.me/furo/quickstart/>`__
