@@ -35,8 +35,8 @@ Before you start, make sure that you have ``make``, ``python3``, ``python3-venv`
     sudo apt install make python3 python3-venv python3-pip
 
 
-Python environment
-------------------
+Manage Python environment
+-------------------------
 
 The Python prerequisites from the ``docs/requirements.txt`` file are automatically
 installed when you build the documentation.
@@ -75,6 +75,7 @@ re-installation), run the following command in your documentation directory:
 
 
 .. _build-docs:
+
 
 Build the documentation
 -----------------------
@@ -132,11 +133,10 @@ This command builds the documentation and serves it at
 :literalref:`http://127.0.0.1:8000/`.
 
 
-Live view
----------
+Run a live preview
+------------------
 
-Instead of building the documentation for each change and then serving it, you can run a
-live preview of the documentation:
+Instead of building the documentation for each change and then serving it, you can run a live preview of the documentation:
 
 .. code-block:: bash
 
@@ -221,3 +221,4 @@ On Linux, required packages can be installed with:
     heading-styled rubric in the HTML output. See the default ``index.rst`` for an
     example. Rubric-based headings aren't included as entries in the table of contents
     or the navigation sidebar.
+

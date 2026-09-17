@@ -9,16 +9,13 @@ Default Sphinx extensions
 These extensions are enabled in the Sphinx Stack by default.
 
 ``canonical_sphinx``
-   Contains the default Canonical branded theme.
+   Required for the Sphinx Stack. Provides the Furo-based theme and custom templates.
 
 ``notfound.extension``
    Allows creating custom 404 pages.
-   Needed by ``canonical_sphinx``.
 
 ``sphinx_design``
    Provides UI components like responsive grids, cards, and badges.
-
-   Needed by ``canonical_sphinx``.
 
 ``sphinx_reredirects``
    Handles URL redirects for moved or deleted pages.
@@ -26,22 +23,14 @@ These extensions are enabled in the Sphinx Stack by default.
    Default Support for this extension will be dropped in an upcoming release of the 
    Sphinx Stack. Update your documentation to use ``sphinx-rerediraffe`` instead.
 
-   Needed by ``canonical_sphinx``.
-
 ``sphinx_tabs.tabs``
    Provides tabs.
-
-   Needed by ``canonical_sphinx``.
 
 ``sphinxcontrib.jquery``
    Ensures jQuery is loaded to maintain compatibility with older extensions and themes.
 
-   Needed by ``canonical_sphinx``.
-
 ``sphinxext.opengraph``
    Generates OpenGraph metadata to create rich preview cards when links are shared on social media.
-
-   Needed by ``canonical_sphinx``.
 
 ``sphinxext-rediraffe``
    Handles URL redirects for moved or deleted pages. Redirects can be defined as a

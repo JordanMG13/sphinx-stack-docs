@@ -16,6 +16,7 @@ Contents
    :maxdepth: 1
 
    github-workflows
+   conf-py-configuration
    default-extensions
    rst-syntax
    myst-syntax
