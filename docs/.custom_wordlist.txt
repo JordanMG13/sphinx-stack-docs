@@ -70,6 +70,7 @@ GitHub
 Sphinx
 URL
 PR
+PRs
 Read the Docs
 Spread
 landscape
