@@ -32,7 +32,7 @@
 "how-to/troubleshoot-issues/" "how-to/troubleshooting"
 "how-to/set-up-sitemaps/" "explanation/sitemaps"
 "how-to/add-documentation-testing/" "how-to/optional-customisation/add-documentation-testing"
-"how-to/test-ulwazi-theme/" "contribute/test-ulwazi-theme"
+"how-to/test-ulwazi-theme/" "how-to/switch-to-ulwazi"
 "how-to/enable-google-analytics/" "how-to/optional-customisation/enable-google-analytics"
 
 "reference/removed-url-check/" "reference/github-workflows"
@@ -49,7 +49,6 @@
 "reference/doc-cheat-sheet" "reference/rst-syntax-reference"
 "reference/style-guide" "reference/rst-syntax-reference"
 
-
 "reference/automatic_checks" "how-to/run-documentation-checks"
 "reference/automatic_checks_accessibility" "how-to/run-documentation-checks"
 "reference/automatic_checks_inclusivelanguage" "how-to/run-documentation-checks"
@@ -57,3 +56,5 @@
 "reference/automatic_checks_linting" "how-to/run-documentation-checks"
 "reference/automatic_checks_spelling" "how-to/run-documentation-checks"
 "reference/automatic_checks_styleguide" "how-to/run-documentation-checks"
+
+"contribute/test-ulwazi-theme" "how-to/switch-to-ulwazi"

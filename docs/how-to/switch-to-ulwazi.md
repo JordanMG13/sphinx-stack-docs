@@ -1,23 +1,25 @@
 ---
 myst:
   html_meta:
-    description: How to test the Ulwazi theme in a documentation project based on Sphinx Stack.
+    description: How to switch to the Ulwazi theme in a documentation project based on Sphinx Stack.
 relatedlinks: "[Ulwazi&#32;on&#32;PyPI](https://pypi.org/project/ulwazi), [Vanilla](https://vanillaframework.org), [sphinx-basic-ng](https://github.com/pradyunsg/sphinx-basic-ng)"
 ---
 
 (how-to-test-ulwazi-theme)=
+(how-to-switch-to-ulwazi)=
 
-# Test the Ulwazi theme
+# Switch to the Ulwazi theme
 
 Ulwazi is a Sphinx theme built on Vanilla, with the base layout and functionality
 derived from sphinx-basic-ng.
 
-This guide outlines the steps required to use the Ulwazi theme in your Sphinx
-documentation project.
+This guide outlines the steps required to switch to the Ulwazi theme in your Sphinx
+Stack project.
 
 We recommend creating a new branch of your repository and testing Ulwazi in that branch.
 You can build the Ulwazi-themed documentation locally from the branch or open a PR and
-view the changes in its RTD preview.
+view the changes in its RTD preview. Once you're happy with the results, merge the
+changes to your project's default branch.
 
 ## Update the dependencies
 
@@ -44,7 +46,7 @@ package with Ulwazi and its dependencies:
 + ulwazi
 ```
 
-Be ready to add any other missing extensions if you see errors about them.
+Be ready to add any other missing packages if you see errors about them.
 
 ## Main configuration
 
@@ -95,10 +97,11 @@ html_theme = "ulwazi"
 
 #### Update the extensions
 
-In the list of extensions, replace Canonical Sphinx with Ulwazi and its dependencies:
+In the `extensions` list, replace Canonical Sphinx with Ulwazi. Canonical Sphinx also
+sets up several extensions automatically, so list those here as well:
 
 ```{code-block} diff
-:caption: extensions in conf\.py
+:caption: `extensions` in conf\.py
 
 -"canonical-sphinx~=0.6",
 +"ulwazi",

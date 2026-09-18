@@ -24,6 +24,7 @@ LLMs?
 Multipass
 npm
 otf
+onboarding
 plantuml
 PNG
 Pygments
@@ -43,6 +44,7 @@ tex
 texlive
 TOC
 toctree
+traceback
 txt
 ulwazi
 uncomment(ing)?

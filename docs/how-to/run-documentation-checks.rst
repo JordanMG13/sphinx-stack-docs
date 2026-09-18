@@ -94,7 +94,7 @@ Configure
 ~~~~~~~~~
 
 If you have links in the documentation that you don't want to check, add them to the
-``linkcheck_ignore`` list in the ``conf.py`` file.
+``linkcheck_ignore`` list in the ``conf.py`` file. See :ref:`conf-py-link-checker` for more information on how to configure the link checker.
 
 
 .. _markdown_lint_check:

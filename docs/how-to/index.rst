@@ -25,8 +25,18 @@ with your documentation needs.
     run-documentation-checks
     publish-on-rtd
     update-sphinx-stack/index.rst
-    troubleshooting
+    switch-to-ulwazi
 
+
+Troubleshooting
+----------------
+
+Help diagnose and resolve common issues you might encounter when developing documentation with the Sphinx Stack and deploying on Read the Docs.
+
+.. toctree::
+    :maxdepth: 2
+
+    troubleshooting/index.rst
 
 Optional features and customisation
 -----------------------------------

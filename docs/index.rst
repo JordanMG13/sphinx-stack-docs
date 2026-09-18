@@ -51,13 +51,13 @@ suggestions, fixes and constructive feedback.
     :hidden:
     :maxdepth: 2
 
-    Set up a new project <set-up-a-new-project>
-    How-to guides <how-to/index>
-    Reference <reference/index>
-    Explanation <explanation/index>
+    set-up-a-new-project
+    how-to/index
+    reference/index
+    explanation/index
 
 .. toctree::
     :hidden:
 
-    Release notes <release-notes/index>
-    Contribute <contribute/index>
+    release-notes/index
+    contribute/index

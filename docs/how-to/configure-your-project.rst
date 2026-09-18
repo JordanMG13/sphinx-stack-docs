@@ -6,31 +6,24 @@
 Configure your project
 ======================
 
-While the Sphinx Stack provides default configuration values for most settings, you'll
-need to set project-specific parameters like the project name to ensure the
-documentation reflects your project accurately.
+Sphinx Stack documentation projects are configured in the ``docs/conf.py`` file. The default configuration will work for most projects, but you still need to set some project-specific values, such as your product's name and documentation URL.
 
 .. important::
 
-    After setting up your repository with the Sphinx Stack, you should track the changes
-    made to the Sphinx Stack.
+    The Sphinx Stack is updated periodically. After you set up your documentation repository with the Sphinx Stack, you need to track the changes made to the Sphinx Stack and manually maintain your repository.
 
-    Changes to the look and feel, as well as common functionality, will be automatically
-    available through updates to the `Canonical Sphinx
-    <https://github.com/canonical/canonical-sphinx>`__ extension.
+    Use the Sphinx Stack `release notes <https://documentation.ubuntu.com/sphinx-stack/latest/release-notes>`__ or `changelog <https://github.com/canonical/sphinx-stack/blob/main/CHANGELOG.md>`__ to track changes to the Sphinx Stack. Subscribe to the repository releases to get notified whenever there is a new release. For the recommended way of manually updating your Sphinx Stack, see :ref:`update-sphinx-stacks`.
 
-    Changes to files that are part of the Sphinx Stack, for example changes made during
-    steps in :ref:`run-documentation-checks`, might require you to manually update your
-    repository with the required files. See the Sphinx Stack `changelog
-    <https://github.com/canonical/sphinx-stack/blob/main/CHANGELOG.md>`__ for the
-    most relevant (and of course all breaking) changes.
+Mandatory configuration values are marked with ``TODO`` in the ``conf.py`` file. Set these to align with your project and ensure you comment out any settings that aren't relevant to your environment. 
 
-Configuration for a Sphinx Stack based documentation is set in the ``docs/conf.py``
-Sphinx configuration file.
+Steps 1 – 5 cover the required configuration. For details, see :ref:`Required configuration <conf-py-required-configuration>`.
 
-The default configuration in the Sphinx Stack is prepared in a way that makes sense for
-most projects. However, you must set some critical parameters that are unique for your
-project, like the project's name.
+1. Set project identity, branding, and repository metadata.
+2. Set the documentation site URL.
+3. Configure feedback and page navigation behavior.
+4. Define LLM metadata.
+5. Configure how Sphinx should validate links.
+6. Add :ref:`optional configuration <conf-py-optional-configuration>` as needed. The following links can help you with additional configuration:
 
 In addition, you can find some optional parameters or add your own configuration
 parameters to the file.
@@ -151,6 +144,7 @@ To add an extension to your documentation set, add its Python package to the
     you add any extensions to this list, it's your responsibility to ensure that they're
     compatible with the rest of the Sphinx Stack.
 
+   The Sphinx Stack fully supports the third-party extensions included in the Starter pack. Support is not guaranteed for extensions you add or customize in requirements.txt
 
 Add page-specific configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
