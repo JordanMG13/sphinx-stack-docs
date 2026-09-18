@@ -12,14 +12,10 @@ Runtime errors
 
 A link in the documentation set is broken when the URL contains an "&" character. For example, a link to ``https://example.com/?param1=value1&param2=value2`` may be rendered as ``https://example.com/?param1=value1&amp;amp;param2=value2`` in the generated HTML, causing the link to break.
 
-Possible cause
-~~~~~~~~~~~~~~
+Cause
+~~~~~
 
-This is a known+fixed bug: https://github.com/executablebooks/MyST-Parser/pull/1126
-
-But it is currently unavailable to us due to myst-parser being pinned to avoid conflicts: https://github.com/canonical/sphinx-stack/pull/496
-
-The fix is in ``myst-parser`` 5.1.0, which would require dropping Python 3.10 and Sphinx 7 (which is not an option in late 2026).
+This is a `known bug <https://github.com/executablebooks/MyST-Parser/issues/1028>`__ that has been resolved in the myst-parser extension. However, the latest version of the extension is incompatible with the Sphinx Stack, which retains support for Python 3.10 and Sphinx 7.
 
 Resolution
 ~~~~~~~~~~
@@ -32,7 +28,7 @@ If you are using `Markdown <https://daringfireball.net/projects/markdown/>`_, yo
 
      <a href="https://example.com/?param1=value1&amp;param2=value2">Link text</a>
 
-If you are using `MyST <https://myst-parser.readthedocs.io/en/latest/>`_, you can use an ``eval-rst`` - this is helpful because it supports including a clear comment why the link has been treated specially (so will be easier to spot later when a fixed ``myst-parser`` is in use):
+If you are using `MyST <https://myst-parser.readthedocs.io/en/latest/>`_, add the link in an ``eval-rst`` directive. You may also want to include a comment explaining the workaround so it'll be easier to undo later on.
 
 .. code-block:: markdown
 
