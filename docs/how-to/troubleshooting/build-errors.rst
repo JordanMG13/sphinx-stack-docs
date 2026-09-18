@@ -67,10 +67,10 @@ To fix the issue, try:
 Sporadic build failures due to a "No such file or directory" error
 ------------------------------------------------------------------
 
-If your Read the Docs builds are sporadically failing due to a file missing error, it is best to
+If your Read the Docs builds are sporadically failing due to a file missing error,
 first check the build output to make sure the issue isn't related to dependencies.
 
-Once you have verified this is not the case, you can double check your ``conf.py`` configuration.
+Once you have verified this is not the case, double check your ``conf.py`` configuration.
 
 Probable cause
 ~~~~~~~~~~~~~~~
@@ -83,9 +83,9 @@ Resolution
 ~~~~~~~~~~
 
 .. warning::
-   Please note that this workaround can cause your build times to grow rather large, as the parallel nature of the normal config cuts build times considerably.
+   Note that this workaround can cause your build times to grow, as the parallel nature of the normal config cuts build times considerably.
 
-To fix this, simply tell ``sphinx-llm`` in your ``conf.py`` to not build in parallel:
+To fix this, tell ``sphinx-llm`` in your ``conf.py`` to not build in parallel:
 
 .. code-block:: python
 
