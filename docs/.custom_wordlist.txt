@@ -44,6 +44,7 @@ tex
 texlive
 TOC
 toctree
+traceback
 txt
 ulwazi
 uncomment(ing)?
