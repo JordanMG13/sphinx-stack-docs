@@ -64,8 +64,8 @@ To fix the issue, try:
 * Restricting problem packages to recent versions (using ``package~=version``)
 * Using a constraints file
 
-Sporadic build failures due to a "No such file or directory" error
-------------------------------------------------------------------
+Sporadic "No such file or directory" errors
+-------------------------------------------
 
 If your Read the Docs builds are sporadically failing due to a file missing error,
 first check the build output to make sure the issue isn't related to dependencies.
